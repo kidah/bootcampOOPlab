@@ -89,17 +89,18 @@ class Truck extends Vehicle{
         this._getModel = function(){
           return _model;
         }
-        let _typeOfTruck = 'Rigid';
         
-        if(length <=12.5 && speed <= 80){
-          _typeOfTruck = 'Rigid Truck';
-        }
-        else{
-          _typeOfTruck = 'Rigid and Dog Truck';
-        }
        
 
         getType = function(speed, length){
+          let _typeOfTruck = 'Rigid';
+           if(length <=12.5 && speed <= 80){
+             _typeOfTruck = 'Rigid Truck';
+           }
+           else{
+            _typeOfTruck = 'Rigid and Dog Truck';
+           }
+       
           return _typeOfTruck;
         }
 
