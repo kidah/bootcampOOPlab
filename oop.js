@@ -86,7 +86,7 @@ class Truck extends Vehicle{
         const _numberOfWheels = 8;
         const _type = 'Truck';
         this._length = length;
-         this._getModel = function(){
+        this._getModel = function(){
           return _model;
         }
         let _typeOfTruck = 'Rigid';
@@ -99,7 +99,7 @@ class Truck extends Vehicle{
         }
        
 
-        this._getType = function(){
+        getType = function(){
           return _typeOfTruck;
         }
 
