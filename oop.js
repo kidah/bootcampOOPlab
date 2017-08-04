@@ -99,7 +99,7 @@ class Truck extends Vehicle{
         }
        
 
-        getType = function(){
+        getType = function(speed, length){
           return _typeOfTruck;
         }
 
